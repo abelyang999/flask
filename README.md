@@ -1,5 +1,4 @@
-# crud-application-using-flask-and-mysql
-A simple CRUD application using Flask and MySQL
+# build up under python3.6 with virtual env
 
 #### Built With
 
@@ -11,10 +10,10 @@ A simple CRUD application using Flask and MySQL
 #### Running on Docker
 
 ```
-docker-compose up -d
+docker-compose up --build -d
 ```
-
-After executing, you will have 2 running cointainers on your Docker host: `phonebook-app` and `phonebook-mysql`. For accessing the web application, open your browser and go to http://your-docker-host-ip-address:8181
+Visit at: 
+http://your-docker-host-ip-address:8181
 
 To destroy the containers, execute:
 
@@ -22,10 +21,4 @@ To destroy the containers, execute:
 docker-compose down --rmi all
 ```
 
-## Donate
-
-If you want to donate to this project, please contact us:
-
-- Email: moehammadhanif@gmail.com
-- Telegram: [@hanifmu](https://t.me/hanifmu)
 # flask
