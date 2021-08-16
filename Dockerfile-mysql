@@ -1,0 +1,8 @@
+FROM mysql:5.7
+
+ENV MYSQL_DATABASE emp
+ENV MYSQL_USER smart
+ENV MYSQL_PASSWORD cloud
+ENV MYSQL_RANDOM_ROOT_PASSWORD yes
+
+COPY database/ /docker-entrypoint-initdb.d/

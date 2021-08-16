@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  emp-mysql:
+    container_name: emp-mysql
+    build:
+      context: .
+      dockerfile: Dockerfile-mysql
+    restart: always
+
+  emp-app:
+    container_name: emp-app
+    build:
+      context: .
+      dockerfile: Dockerfile-app
+    depends_on:
+      - emp-mysql
+    ports:
+      - "8181:8181"
+    restart: always
